@@ -2,6 +2,10 @@
 Polls
 =====
 
+This is the polls application described by the Django Tutorial at https://docs.djangoproject.com
+
+See [django-tutorial-mysite](https://github.com/crias/django-tutorial-mysite) for its usage.
+
 Polls is a simple Django app to conduct Web-based polls. For each
 question, visitors can choose between a fixed number of answers.
 
@@ -19,7 +23,7 @@ Quick start
 
 2. Include the polls URLconf in your project urls.py like this::
 
-      url(r'^polls/', include('polls.urls')),
+      url(r'^polls/', include('polls.urls', namespace='polls')),
 
 3. Run `python manage.py syncdb` to create the polls models.
 
